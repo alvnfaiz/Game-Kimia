@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GameActivity"
+    android:background="@color/blue_500">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/white"
+        android:text="Un"
+        android:layout_marginTop="250dp"
+        android:textSize="50sp"
+        android:fontFamily="@font/gameria"
+        android:id="@+id/UnsurKimia"
+        />
+
+    <EditText
+        android:id="@+id/jawaban"
+        android:layout_width="300dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/UnsurKimia"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp"
+        android:background="@color/white"
+        android:backgroundTint="@color/white"
+        android:fontFamily="@font/gameria"
+        android:hint="Jawaban mu"
+        android:textColor="@color/black"/>
+
+    <Button
+        android:id="@+id/btnJawab"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/jawaban"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:backgroundTint="@color/white"
+        android:fontFamily="@font/gameria"
+        android:text="Jawab"
+        android:textColor="@color/blue_500"
+        android:textSize="20dp" />
+</RelativeLayout>
