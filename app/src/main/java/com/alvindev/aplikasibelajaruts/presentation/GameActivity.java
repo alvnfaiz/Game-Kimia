@@ -1,4 +1,4 @@
-package com.alvindev.aplikasibelajaruts;
+package com.alvindev.aplikasibelajaruts.presentation;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -6,21 +6,21 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
-import java.util.Objects;
-import java.util.Random;
-
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.alvindev.aplikasibelajaruts.R;
+
+import java.util.Random;
+
 public class GameActivity extends AppCompatActivity {
-TextView unsur;
-Button jawab;
-EditText jawaban;
+    TextView unsur;
+    Button jawab;
+    EditText jawaban;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_game);
-        Objects.requireNonNull(getSupportActionBar()).hide();
         unsur = findViewById(R.id.UnsurKimia);
         jawab = findViewById(R.id.btnJawab);
         jawaban = findViewById(R.id.jawaban);
