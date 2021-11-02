@@ -7,6 +7,7 @@ import androidx.room.Room;
 import androidx.room.RoomDatabase;
 
 import com.alvindev.aplikasibelajaruts.domain.Question;
+import com.alvindev.aplikasibelajaruts.domain.Score;
 
 /**
  * Ini merupakan kelas yang menangani database. {@link Database} adalah anotasi yang menghubungkan
@@ -14,7 +15,7 @@ import com.alvindev.aplikasibelajaruts.domain.Question;
  * daftar Tabel ke dalam database, disini kita secara langsung menganggap entities dan model sebagai
  * entitas yang sama
  */
-@Database(entities = {Question.class}, version = 1)
+@Database(entities = {Question.class, Score.class}, version = 1)
 public abstract class RumusKimiaRoomDatabase extends RoomDatabase {
     private static volatile RumusKimiaRoomDatabase INSTANCE;
 
@@ -32,5 +33,5 @@ public abstract class RumusKimiaRoomDatabase extends RoomDatabase {
 
     public abstract QuestionDao questionDao();
 
-
+    public abstract ScoreDao scoreDao();
 }
