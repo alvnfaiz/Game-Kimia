@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue_500"
+    tools:context="com.alvindev.aplikasibelajaruts.gameplay.GameFragment"
+    tools:ignore="Overdraw"
+    tools:keep="@layout/fragment_game">
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="250dp"
+        android:indeterminate="true"
+        android:indeterminateTint="@color/white"
+        android:indeterminateTintMode="src_atop"
+        android:visibility="gone" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/lottie_error"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="150dp"
+        android:visibility="gone"
+        app:lottie_autoPlay="true"
+        app:lottie_fileName="lotties/no-connection.json"
+        app:lottie_loop="true"
+        tools:ignore="ImageContrastCheck" />
+
+    <TextView
+        android:id="@+id/UnsurKimia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="250dp"
+        android:fontFamily="@font/gameria"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Headline1"
+        android:textColor="@color/white"
+        android:visibility="invisible"
+        tools:text="Un" />
+
+    <EditText
+        android:id="@+id/jawaban"
+        android:layout_width="300dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/UnsurKimia"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp"
+        android:background="@color/white"
+        android:backgroundTint="@color/white"
+        android:fontFamily="@font/gameria"
+        android:gravity="center"
+        android:hint="@string/jawaban_mu"
+        android:imeOptions="actionDone"
+        android:importantForAutofill="no"
+        android:inputType="text"
+        android:textColor="@color/black" />
+
+    <Button
+        android:id="@+id/btnJawab"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/jawaban"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:backgroundTint="@color/white"
+        android:fontFamily="@font/gameria"
+        android:text="@string/jawab"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Headline5"
+        android:textColor="@color/blue_500" />
+</RelativeLayout>

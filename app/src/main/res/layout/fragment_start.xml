@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue_500"
+    tools:context=".MainActivity"
+    tools:ignore="Overdraw"
+    tools:keep="@layout/fragment_start">
+
+    <TextView
+        android:id="@+id/txtUnsurKimiaTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="300dp"
+        android:fontFamily="@font/gameria"
+        android:text="@string/unsur_kimia"
+        android:textColor="@color/white"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/txtDeskripsiGame"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtUnsurKimiaTitle"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="@string/guess_the_chemical_element"
+        android:textColor="@color/white" />
+
+    <Button
+        android:id="@+id/btnStartGame"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtDeskripsiGame"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:backgroundTint="@color/white"
+        android:fontFamily="@font/gameria"
+        android:gravity="center"
+        android:text="@string/start"
+        android:textColor="@color/blue_500"
+        android:textSize="20sp" />
+
+</RelativeLayout>

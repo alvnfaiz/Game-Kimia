@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
     <color name="purple_200">#3B82F6</color>
     <color name="purple_500">#3B82F6</color>
     <color name="purple_700">#3ADA28</color>
@@ -8,5 +8,5 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="blue_500">#3B82F6</color>
-    <color name="red">#FD2F2F</color>
+    <color name="red" tools:keep="@color/red">#FD2F2F</color>
 </resources>

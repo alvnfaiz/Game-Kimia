@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/game_navigation"
+    app:startDestination="@id/startFragment"
+    tools:keep="@navigation/game_navigation">
+
+    <fragment
+        android:id="@+id/gameFragment"
+        android:name="com.alvindev.aplikasibelajaruts.gameplay.GameFragment"
+        android:label="Play">
+        <action
+            android:id="@+id/action_gameFragment_to_benarFragment"
+            app:destination="@id/benarFragment"
+            app:popUpTo="@id/gameFragment" />
+        <action
+            android:id="@+id/action_gameFragment_to_salahFragment"
+            app:destination="@id/salahFragment"
+            app:popUpTo="@id/gameFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/benarFragment"
+        android:name="com.alvindev.aplikasibelajaruts.gameplay.BenarFragment"
+        android:label="Jawaban Benar"
+        tools:layout="@layout/fragment_benar" >
+        <action
+            android:id="@+id/action_benarFragment_to_startFragment"
+            app:destination="@id/startFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/salahFragment"
+        android:name="com.alvindev.aplikasibelajaruts.gameplay.SalahFragment"
+        android:label="Jawaban Salah"
+        tools:layout="@layout/fragment_salah">
+        <argument
+            android:name="correctAnswerArgument"
+            app:argType="string"
+            app:nullable="true" />
+        <action
+            android:id="@+id/action_salahFragment_to_startFragment"
+            app:destination="@id/startFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/startFragment"
+        android:name="com.alvindev.aplikasibelajaruts.gameplay.StartFragment"
+        android:label="Unsur Kimia"
+        tools:layout="@layout/fragment_start">
+        <action
+            android:id="@+id/action_startFragment_to_gameFragment"
+            app:destination="@id/gameFragment" />
+    </fragment>
+</navigation>

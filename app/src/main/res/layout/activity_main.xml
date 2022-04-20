@@ -1,45 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity"
-    android:background="@color/blue_500">
+    tools:keep="@layout/activity_main">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Unsur Kimia!"
-        android:textColor="@color/white"
-        android:textSize="25sp"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="300dp"
-        android:id="@+id/txtUnsurKimiaTitle"
-        android:fontFamily="@font/gameria"
-        />
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:id="@+id/txtDeskripsiGame"
-        android:layout_below="@id/txtUnsurKimiaTitle"
-        android:text="Game tebak-tebakan unsur kimia"
-        android:textColor="@color/white"
-        android:layout_marginTop="10dp"
-        />
-
-    <Button
-        android:id="@+id/btnStartGame"
-        android:layout_width="200dp"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/txtDeskripsiGame"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="50dp"
-        android:backgroundTint="@color/white"
-        android:fontFamily="@font/gameria"
-        android:text="START!"
-        android:textColor="@color/blue_500"
-        android:textSize="20dp" />
-
-</RelativeLayout>
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/nav_host_fragment"
+        android:name="androidx.navigation.fragment.NavHostFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:defaultNavHost="true"
+        app:navGraph="@navigation/game_navigation" />
+</FrameLayout>
