@@ -1,3 +1,19 @@
-<resources>
-    <string name="app_name">Aplikasi Belajar UTS</string>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">Tebak Kimia</string>
+    <string name="hello_blank_fragment" tools:keep="@string/hello_blank_fragment">Hello blank fragment</string>
+    <string name="jawaban_mu" tools:keep="@string/jawaban_mu">Jawaban mu</string>
+    <string name="jawab" tools:keep="@string/jawab">Jawab</string>
+    <string name="wrong_alert" tools:keep="@string/wrong_alert">SALAH</string>
+    <string name="the_correct_answer_is" tools:keep="@string/the_correct_answer_is">Jawaban yang Benar adalah</string>
+    <string name="answer_placeholder" tools:keep="@string/answer_placeholder">XXXX</string>
+    <string name="correct" tools:keep="@string/correct">BENAR</string>
+    <string name="next" tools:keep="@string/next">Lanjut</string>
+    <string name="home" tools:keep="@string/home">Home</string>
+    <string name="start" tools:keep="@string/start">START!</string>
+    <string name="game_android">Game Android</string>
+    <string name="unsur_kimia" tools:keep="@string/unsur_kimia">Unsur Kimia!</string>
+    <string name="guess_the_chemical_element" tools:keep="@string/guess_the_chemical_element">Game tebak-tebakan unsur kimia</string>
+    <string name="no_connection">Tidak ada Koneksi Internet</string>
+    <string name="retry">Coba Lagi</string>
+    <string name="begin_alert">Aplikasi ini membutuhkan koneksi internet untuk mengakses data</string>
 </resources>
